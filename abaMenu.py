@@ -4,7 +4,7 @@ from tkinter import filedialog
 import google.generativeai as genai
 import base64
 
-genai.configure(api_key="AIzaSyCqErI8bfXFpVz4N_zzZD96ZyxBaxrS_eY")  
+genai.configure(api_key="")  
 
 modelo = genai.GenerativeModel('gemini-1.5-flash')
 
@@ -87,3 +87,4 @@ def criar_menu(app):
     botao_anexar.place(relx=0.83, rely=1.0, anchor='sw', relwidth=0.03,x = -20, y=-10)
 
     texto_usuario.bind("<Return>", lambda event: enviar_mensagem())
+
